@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class UniqueSum {
+	
+	//below is a very sophisticated unique sum method that works for more than 3 values. It's kind of complex but cool.
 
 	public int uniqueSum(int[] array) {
 		
@@ -38,7 +40,7 @@ public class UniqueSum {
 
 
 
-
+//below is a simple version of the 3 parameter unique sum method
 
 //if(a!=b&&b!=c) {
 //	return a+b+c;
