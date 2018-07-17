@@ -41,6 +41,14 @@ public class Intermediate {
 		System.out.println("Search name: " + searchName);
 		People people = new People(peopleList);
 		System.out.println(people.search(searchName));
+		
+		System.out.println("Question 5: ");
+		Car model3 = new Car(1, 2, "Tesla", 1000, "automatic", "electric");
+		Motorcycle harley = new Motorcycle(2, 5, "HarleyDavidson", "lowrider",10000);
+		
+		ArrayList<Vehicle> vehicles = new ArrayList<>();
+		vehicles.add(model3);
+		vehicles.add(harley);
 
 
 	}
