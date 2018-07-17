@@ -11,5 +11,7 @@ class Helicopter extends Vehicle {
 		this.jetEnginePresent = jetEnginePresent;
 	}
 	
+	
+	
 }
 

@@ -1,6 +1,6 @@
 package intermediate;
 
-public class Vehicle {
+public abstract class Vehicle {
 	
 	int age, id;
 	String manufacturer;
@@ -10,5 +10,7 @@ public class Vehicle {
 		this.id = id;
 		this.manufacturer = manufacturer;
 	}
+	
+	//public String toString() {
 	
 }

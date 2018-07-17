@@ -1,7 +1,7 @@
 package intermediate;
 
 public class Car extends Vehicle {
-	int mileage;
+	public int mileage;
 	String transmissionType, fuelType;
 	
 	public Car(int id, int age, String manufacturer, int mileage, String transmissionType, String fuelType) {
@@ -12,5 +12,7 @@ public class Car extends Vehicle {
 		
 		
 	}
+	
+	public double price = 10.5;
 		
 }
