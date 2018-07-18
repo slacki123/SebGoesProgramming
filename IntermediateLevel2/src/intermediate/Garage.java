@@ -34,7 +34,7 @@ public class Garage {
 		vehicles.remove(obj);
 	}
 
-	private int calculateBill(int id) {
+	private int calculateBillbyId(int id) {
 		for (Vehicle temp : vehicles) {
 			if (temp.id == id) {
 				Car tem = (Car) temp;
@@ -59,7 +59,7 @@ public class Garage {
 
 	// bill simplification
 	public void bill(int a) {
-		System.out.println("£" + calculateBill(a));
+		System.out.println("You have selected id '" + a + "' for purchase. Your bill is £" + calculateBillbyId(a) + ".");
 	}
 	
 	public void emptyGarage() {
