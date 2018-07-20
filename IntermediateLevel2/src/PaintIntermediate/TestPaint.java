@@ -101,6 +101,22 @@ public class TestPaint {
 		assertEquals("Test Failed",85.0, Paint.outputMinWaste(paintList, room),0);
 	}
 	
+	@Test
+	public void getMinPaintingCostTest() {
+		Paint cheapoMax = new Paint("CheapoMax", 10, 19.99, 20);
+		Paint averageJoes = new Paint("AverageJoes", 11, 17.99, 15);
+		Paint duluxourousPaints = new Paint("DuluxourousPaints", 20, 25, 10);
+
+		Room room = new Room(40, 2);
+
+		ArrayList<Paint> paintList = new ArrayList<Paint>();
+		paintList.add(cheapoMax);
+		paintList.add(averageJoes);
+		paintList.add(duluxourousPaints);
+		
+		assertEquals("Test Failed", 0.09995, Paint.outputMinCost(paintList), 0);
+	}
+	
 	
 
 }

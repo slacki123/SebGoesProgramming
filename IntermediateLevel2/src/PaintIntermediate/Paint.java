@@ -78,12 +78,14 @@ public class Paint {
 		
 	}
 	
-	public static void outputMinCost(ArrayList<Paint> paintList) {
+	public static double outputMinCost(ArrayList<Paint> paintList) {
 		for (Paint a : paintList) {
 			priceList.add(a.paintingAreaPrice());
 		}
 		
 		System.out.println(" \nMinimum painting cost per area is *"  + paintList.get(priceList.indexOf(Collections.min(priceList))) + "* at £" + Collections.min(priceList) + " per m2");
+		return Collections.min(priceList);
 	}
+	
 
 }
