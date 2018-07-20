@@ -23,24 +23,27 @@ public class Dog {
 
 	public int position() {
 
-//		ArrayList<Integer> d = new ArrayList<Integer>();
+		// ArrayList<Integer> d = new ArrayList<Integer>();
 
 		for (int i = 1; i <= 100; i++) {
-			
-			 switch (i) {
-			    case 11:
-			    	System.out.print(i +"th, ");
-			    	break;
-			    case 12:
-			    	System.out.print(i +"th, ");
-			    	break;
-			    case 13:
-			    	System.out.print(i +"th, ");
-			    	break;
-			  }
-			 
-//			d.add(i);
-			if (position != i && i % 10 != 1 && i % 10 != 2 && i % 10 != 3) {
+
+			switch (i) {
+			case 11:
+				System.out.print(i + "th, ");
+				break;
+			case 12:
+				System.out.print(i + "th, ");
+				break;
+			case 13:
+				System.out.print(i + "th, ");
+				break;
+			case 100:
+				System.out.print(i + "th");
+				break;
+			}
+
+			// d.add(i);
+			if (position != i && i % 10 != 1 && i % 10 != 2 && i % 10 != 3 && i != 100) {
 				System.out.print(i + "th, ");
 			}
 
@@ -59,14 +62,10 @@ public class Dog {
 			if (i % 20 == 0) {
 				System.out.println();
 			}
-			
-			 
-			
 
 			// System.out.println(d);
 			// if(i)
 		}
 		return position;
-		
 	}
 }
